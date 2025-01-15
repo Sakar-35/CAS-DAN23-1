@@ -17,13 +17,21 @@ print("3. Recursion depth should be at least 3.")
 print("4. The reduction factor should be from 0.5 to 0.8.")
 print("Now you can try out as you like. Thank you!")
 
-# Get user input for the tree parameters
-left_angle = float(input("Enter left branch angle: "))
-right_angle = float(input("Enter right branch angle: "))
-branch_length = float(input("Enter starting branch length: "))
-recursion_depth = float(input("Enter recursion depth: "))
-reduction_factor = float(input("Enter branch length reduction factor (e.g., 0.7): "))
-
+# Function to get a floating-point input from the user with validation
+def get_float_input(prompt):
+    while True:
+        try:
+            return float(input(prompt))  # Try to convert user input to float
+        except ValueError:
+            print("Invalid input! Please enter a numeric value.")  # Handle non-numeric input
+ 
+# Prompt user for tree parameters with appropriate messages
+left_angle = get_float_input("Enter left branch angle: ")  # Get left branch angle from user
+right_angle = get_float_input("Enter right branch angle: ")  # Get right branch angle from user
+branch_length = get_float_input("Enter starting branch length: ")  # Get the starting branch length
+recursion_depth = get_float_input("Enter recursion depth: ")  # Get the recursion depth for the tree
+reduction_factor = get_float_input("Enter branch length reduction factor (e.g., 0.7): ")  # Get the reduction factor for branch length
+ 
 # Setup the screen and turtle
 screen = turtle.Screen()
 screen.screensize(600, 600)
