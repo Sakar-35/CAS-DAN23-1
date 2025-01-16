@@ -41,8 +41,13 @@ def verify(raw, decrypted):
     # Verify if the decrypted text matches the original text
     return raw == decrypted
 # Get user input for the integers n and m
-n = int(input("Enter integer n: "))
-m = int(input("Enter integer m: "))
+while True:
+    try:
+        n = int(input("Enter integer n: "))
+        m = int(input("Enter integer m: "))
+        break  # Exit the loop if both inputs are valid integers
+    except ValueError:
+        print("Invalid input. Please enter integers only.")
 
 # Read the original text from 'raw_text.txt'
 with open("raw_text.txt", encoding="utf-8") as file:
