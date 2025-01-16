@@ -37,12 +37,6 @@ for station_temps in stations.values():
 # Divide by the number of stations to get the average, rounding to two decimal places
 monthly_averages = [round(total / len(stations), 2) for total in monthly_averages]
 
-# Save the monthly averages to a text file
-with open('average_temp.txt', 'w') as f:
-    f.write("Monthly Average Temperature:\n")
-    # Write each month's average temperature to the file
-    f.write("\n".join([f"Month {i + 1}: {avg}" for i, avg in enumerate(monthly_averages)]))
-
 # Define the months that make up each season
 seasons = {
     "Summer": [11, 0, 1],  # Dec, Jan, Feb
