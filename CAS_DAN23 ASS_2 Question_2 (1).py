@@ -4,7 +4,7 @@ import csv
 # Dictionary to store temperature data for each year
 years = {}
 # Dictionary to store combined station data across all years
-stations = {}
+
 
 # Load data from all CSV files in the directory for each year (1987 to 2004)
 for year in range(1987, 2005):
