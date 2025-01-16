@@ -1,16 +1,4 @@
-Monthly Average Temperature:
-Month 1: 32.6
-Month 2: 32.05
-Month 3: 30.34
-Month 4: 27.47
-Month 5: 23.89
-Month 6: 20.94
-Month 7: 20.31
-Month 8: 21.74
-Month 9: 24.79
-Month 10: 27.47
-Month 11: 29.72
-Month 12: 31.41
+
 
 Seasonal Average Temperatures:
 Summer: 32.02
